@@ -1,5 +1,28 @@
-h1     { color: #7D3C98; }
-footer { font-size: 8pt; }
+/*Text Styles*/
+h1     { color: #7D3C98;
+        font-size: 40pt;
+        font-family: "Century Gothic", helvetica, sans-serif;
+        font-weight: bold;
+        text-transform: uppercase; }
+h2      { color: #7D3c98; 
+        font-size: 30pt;
+        font-family: "Century Gothic", helvetica, sans-serif; 
+        font-weight:  bold; }
+h3     { color: #7D3c98; 
+        font-size: 20pt;
+        font-family: "Century Gothic", helvetica, sans-serif; 
+        font-weight:  bold; }
+h4     { color: #4b0082; 
+        font-size: 16pt;
+        font-family: "Century Gothic", helvetica, sans-serif; 
+        font-weight:  bold; }
+p       { font-family: "Century Gothic", helvetica, sans-serif;
+        font-size: 14pt;
+        line-height: 115%; }
+
+/*Footer Styles*/
+footer { font-size: 8pt;
+        clear: left;}
 footer a:link { color: orangered; 
                 font-size: 10pt;
                 text-decoration: none; }
@@ -7,3 +30,34 @@ footer a:hover {color: aqua; }
 footer a:focus {color: deeppink; }
 footer a:visited {color: lime; }
 footer a:active {color: gold; }
+
+/*Aside Styles*/
+aside { float: right; 
+    font-family: "Century Gothic", helvetica, sans-serif;
+    font-size: 14pt;
+    background-color: plum; 
+    padding: .5em; }
+aside li { list-style-type: square; }
+
+/*Blockquote Styles*/
+blockquote { font-family: "Century Gothic", helvetica, sans-serif;
+            font-size: 12pt;
+            line-height: 100%; 
+            width: 700px;}
+
+/*Class Styles*/
+.clearL { clear: left; }
+.current { color: fuchsia; }
+.past { color: forestgreen; }
+
+/*ID Styles*/
+#keb { float: left; 
+        padding-right : 1em;}
+#education { font-family: "Century Gothic", helvetica, sans-serif;
+            font-size: 14pt;
+        line-height: 105%; }
+#education li{list-style-type: none;
+margin-bottom: 1em; }
+
+/*Main Styles*/
+main { padding: .5em; }
