@@ -1,0 +1,79 @@
+/*Text Styles*/
+h1     { color: white;
+        background-color: #7D3C98;
+        border: 10px inset hotpink;
+        padding-left: .1em; 
+        font-size: 40pt;
+        font-family: "Century Gothic", helvetica, sans-serif;
+        font-weight: bold;
+        text-transform: uppercase; }
+h2      { color: #7D3c98; 
+        font-size: 30pt;
+        font-family: "Century Gothic", helvetica, sans-serif; 
+        font-weight:  bold; }
+h3     { color: #7D3c98; 
+        font-size: 20pt;
+        font-family: "Century Gothic", helvetica, sans-serif; 
+        font-weight:  bold; }
+h4     { color: #4b0082; 
+        font-size: 16pt;
+        font-family: "Century Gothic", helvetica, sans-serif; 
+        font-weight:  bold; }
+p       { font-family: "Century Gothic", helvetica, sans-serif;
+        font-size: 14pt;
+        line-height: 115%; }
+
+/*Footer Styles*/
+footer { font-size: 8pt;
+        clear: left;
+        border-top: 3px dotted purple; 
+        width: 100%;}
+footer a:link { color: orangered; 
+                font-size: 10pt;
+                text-decoration: none; }
+footer a:hover {color: aqua; }
+footer a:focus {color: deeppink; }
+footer a:visited {color: lime; }
+footer a:active {color: gold; }
+
+/*Aside Styles*/
+aside { float: right; 
+    font-family: "Century Gothic", helvetica, sans-serif;
+    font-size: 14pt;
+    background-color: plum; 
+    padding: .5em; 
+    margin-left: 1em; 
+    margin-bottom: 10em;
+    border: 3px dotted purple; }
+aside li { list-style-type: square;
+        }
+
+/*Blockquote Styles*/
+blockquote { font-family: "Century Gothic", helvetica, sans-serif;
+            font-size: 12pt;
+            line-height: 100%; 
+            width: 700px;
+            background-color: #ffffff; 
+            padding: 1em;
+            border: 3px dotted purple; }
+
+/*Body Styles*/
+body { background-color: #f5edf8; }
+
+/*Class Styles*/
+.clearL { clear: left; }
+.current { color: fuchsia; }
+.past { color: forestgreen; }
+
+/*ID Styles*/
+#keb { float: left; 
+        margin-right: 1em; 
+        padding-left: 1em; 
+        margin-bottom: 5em;}
+#education { font-family: "Century Gothic", helvetica, sans-serif;
+            font-size: 14pt;
+        line-height: 105%; }
+#education li{list-style-type: none;
+margin-bottom: 1em; }
+
+
