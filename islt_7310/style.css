@@ -1,12 +1,18 @@
+/*************************************************************************************************************************************
+Title: Karen Ballengee
+Author: Karen Ballengee
+Date Created: April 1, 2020
+Date Validated: April 9, 2020
+*************************************************************************************************************************************/
 /*Text Styles*/
 h1     { color: white;
         background-color: #7D3C98;
-        border: 10px inset hotpink;
-        padding-left: .1em; 
+        border: 10px groove hotpink;
         font-size: 40pt;
         font-family: "Century Gothic", helvetica, sans-serif;
         font-weight: bold;
-        text-transform: uppercase; }
+        text-transform: uppercase;
+        text-align: center; }
 h2      { color: #7D3c98; 
         font-size: 30pt;
         font-family: "Century Gothic", helvetica, sans-serif; 
@@ -23,11 +29,20 @@ p       { font-family: "Century Gothic", helvetica, sans-serif;
         font-size: 14pt;
         line-height: 115%; }
 
+/*Link Styles*/
+ main  a:link { color: #0000ff; 
+                text-decoration: none;  }
+main a:hover {color: #ff00bf; }
+main a:focus {color: #66ff33; }
+main a:visited {color: #334d4d; }
+main a:active {color: #66ffff; }
+
 /*Footer Styles*/
 footer { font-size: 8pt;
         clear: left;
         border-top: 3px dotted purple; 
-        width: 100%;}
+        width: 100%;
+        padding-top: 5px;}
 footer a:link { color: orangered; 
                 font-size: 10pt;
                 text-decoration: none; }
@@ -43,7 +58,7 @@ aside { float: right;
     background-color: plum; 
     padding: .5em; 
     margin-left: 1em; 
-    margin-bottom: 10em;
+    margin-bottom: 20em;
     border: 3px dotted purple; }
 aside li { list-style-type: square;
         }
@@ -52,28 +67,36 @@ aside li { list-style-type: square;
 blockquote { font-family: "Century Gothic", helvetica, sans-serif;
             font-size: 12pt;
             line-height: 100%; 
-            width: 700px;
+            width: 600px;
             background-color: #ffffff; 
             padding: 1em;
             border: 3px dotted purple; }
 
 /*Body Styles*/
-body { background-color: #f5edf8; }
+body { background-color: #f5edf8;
+    margin: 15px; 
+     }
+
 
 /*Class Styles*/
 .clearL { clear: left; }
+.courses { font-family: "Century Gothic", helvetica, sans-serif;
+            font-size: 14pt; }
 .current { color: fuchsia; }
+.education { font-family: "Century Gothic", helvetica, sans-serif;
+            font-size: 14pt;
+        line-height: 105%; }
+.education li{list-style-type: none;
+margin-bottom: 1em; }
 .past { color: forestgreen; }
 
 /*ID Styles*/
 #keb { float: left; 
         margin-right: 1em; 
         padding-left: 1em; 
-        margin-bottom: 5em;}
-#education { font-family: "Century Gothic", helvetica, sans-serif;
-            font-size: 14pt;
-        line-height: 105%; }
-#education li{list-style-type: none;
-margin-bottom: 1em; }
+        margin-bottom: 8em;}
+
+
+
 
 
