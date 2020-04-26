@@ -2,35 +2,38 @@
 Title: Karen Ballengee
 Author: Karen Ballengee
 Date Created: April 1, 2020
-Date Validated: April 9, 2020
+Date Validated: April 26, 2020
 *************************************************************************************************************************************/
 /*Text Styles*/
+
+
 h1     { color: white;
         background-color: #7D3C98;
         border: 10px groove hotpink;
-        font-size: 40pt;
+        font-size: 4em;
         font-family: "Century Gothic", helvetica, sans-serif;
         font-weight: bold;
         text-transform: uppercase;
         text-align: center; }
 h2      { color: #7D3c98; 
-        font-size: 30pt;
+        font-size: 3em;
         font-family: "Century Gothic", helvetica, sans-serif; 
         font-weight:  bold; }
 h3     { color: #7D3c98; 
-        font-size: 20pt;
+        font-size: 2em;
         font-family: "Century Gothic", helvetica, sans-serif; 
         font-weight:  bold; }
 h4     { color: #4b0082; 
-        font-size: 16pt;
+        font-size: 1.5em;
         font-family: "Century Gothic", helvetica, sans-serif; 
         font-weight:  bold; }
 p       { font-family: "Century Gothic", helvetica, sans-serif;
-        font-size: 14pt;
-        line-height: 115%; }
+        font-size: 1em;
+        line-height: 120%; }
+.resumeparagraph { text-align: left; }
 
 /*Link Styles*/
- main  a:link { color: #0000ff; 
+main  a:link { color: #0000ff; 
                 text-decoration: none;  }
 main a:hover {color: #ff00bf; }
 main a:focus {color: #66ff33; }
@@ -38,13 +41,13 @@ main a:visited {color: #334d4d; }
 main a:active {color: #66ffff; }
 
 /*Footer Styles*/
-footer { font-size: 8pt;
-        clear: left;
+footer { font-size: .8em;
+        clear: both;
         border-top: 3px dotted purple; 
         width: 100%;
-        padding-top: 5px;}
+        padding-top: 1em;}
 footer a:link { color: orangered; 
-                font-size: 10pt;
+                font-size: .8em;
                 text-decoration: none; }
 footer a:hover {color: aqua; }
 footer a:focus {color: deeppink; }
@@ -53,38 +56,40 @@ footer a:active {color: gold; }
 
 /*Aside Styles*/
 aside { float: right; 
-    font-family: "Century Gothic", helvetica, sans-serif;
-    font-size: 14pt;
-    background-color: plum; 
-    padding: .5em; 
-    margin-left: 1em; 
-    margin-bottom: 20em;
-    border: 3px dotted purple; }
-aside li { list-style-type: square;
-        }
+        font-family: "Century Gothic", helvetica, sans-serif;
+        font-size: 1em;
+        background-color: plum; 
+        padding: .5em; 
+        margin-left: 1em; 
+        margin-bottom: 20em;
+        margin-top: 1em;
+        border: 3px dotted purple; }
+        aside li { list-style-type: square; }
 
 /*Blockquote Styles*/
 blockquote { font-family: "Century Gothic", helvetica, sans-serif;
-            font-size: 12pt;
+            font-size: .8em;
             line-height: 100%; 
             width: 600px;
             background-color: #ffffff; 
             padding: 1em;
-            border: 3px dotted purple; }
-
+            border: 3px dotted purple; 
+}
 /*Body Styles*/
 body { background-color: #f5edf8;
-    margin: 15px; 
-     }
+        margin: 15px;   }
 
 
 /*Class Styles*/
+.accomplishments { font-family: "Century Gothic", helvetica, sans-serif;
+                        font-size: 1em;
+                        list-style-type: none; }
 .clearL { clear: left; }
 .courses { font-family: "Century Gothic", helvetica, sans-serif;
-            font-size: 14pt; }
+            font-size: 1em; }
 .current { color: fuchsia; }
 .education { font-family: "Century Gothic", helvetica, sans-serif;
-            font-size: 14pt;
+            font-size: 1em;
         line-height: 105%; }
 .education li{list-style-type: none;
 margin-bottom: 1em; }
@@ -94,9 +99,156 @@ margin-bottom: 1em; }
 #keb { float: left; 
         margin-right: 1em; 
         padding-left: 1em; 
-        margin-bottom: 8em;}
+        margin-bottom: 1em;}
 
+/*Philosophy Styles*/
+#philosophy { width: 50%;
+            margin-left: auto;
+            margin-right: auto; 
+            background-color: whitesmoke;
+            padding: 20px; 
+            margin-bottom: 30px; }
+#philosophy > h3 { text-align: center; }
+.philosophy1::first-letter{ font-family: "Times new roman", serif;
+                            font-size: 5em;
+                            font-weight: bold;
+                            color: rebeccapurple;
+                            text-shadow: 2px 2px #696969;}
+.philosophy2::first-line {text-indent: 5%; }
 
+/*Contact Styles*/
+#name   { width: 20%;
+        background-color: darkgrey;
+        padding: 1em;
+        float: left; 
+        margin-left: 10em;
+        margin-right: 10em; 
+        margin-bottom: 3em;}
+#email { width: 20%; 
+        background-color: darkgray; 
+        padding: 1em;
+        float: left; 
+        margin-bottom: 3em;}
+#comments { width: 55%;
+            height: 300px;
+            padding: 1em;
+            clear: left;
+            background-color: darkgray;
+            margin-top: 7em;
+            margin-bottom: 3em;
+            margin-left: 10em; }
+#submit { width: 20%;
+        background-color: darkgray; 
+        float: right;
+        margin-bottom: 3em;
+        margin-right: 23em;
+        font-family: "Century Gothic", arial, sans-serif; 
+        font-size: 1em;
+        text-align: center; }
+#name h3, #email h3, #comments h3, #submit h3 { font-size: 1em;
+                                                color: black; 
+                                                 }
 
+#hideMe{ display:none; }
 
-
+/*Media Queries*/
+@media screen and (max-width: 640px){ 
+  
+    /*Layout Styles*/
+    body { width: 90%;
+           margin-left: auto;
+            margin-right: auto; }
+    header { width: 94%;
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+            top: 0; }
+    aside { clear: both;    
+            float: left;
+            padding-left: 2em; /*padding to move the text*/
+            padding-right: 0; /*padding to move the text*/
+            font-size: 1em;
+            margin-left: .8em; /*margin to align the aside*/
+            margin-bottom: 1em;
+            margin-right: auto;
+            width: 86%;
+            font-size: 1em; }
+    footer {width: 100%;
+            padding-left: .5em;
+            padding-right: .5em; }
+   blockquote { width: 90%;
+                margin-left: .5em;
+                margin-right: auto; 
+                font-size: .8em; }
+    main { width: 90%; /*condensed to a single main*/
+            float: left;
+            padding-left: .5em;
+            padding-right: .5em;
+            padding-bottom: 1em;
+            margin-left: 1em;  } 
+    
+    /*Text Styles*/
+    h1 { font-size: 1em; }
+    h2 { font-size: 1.25em; }
+    h3 {font-size: 1em; }
+    h4 { font-size: .8em;  }
+    p {font-size: .8em; }
+   
+    aside h4 { margin-top: .2em; 
+            margin-bottom: .2em; }
+    
+    /*Philosophy Styles*/
+    #philosophy { width: 90%;
+            margin-left: auto;
+            margin-right: auto; 
+            padding: 1em;
+            margin-bottom: 10px; }
+    #philsophy p { font-size: .8em;}
+    .philosophy1::first-letter{ 
+                            font-size: 20pt; }
+    .accomplishments { font-size: .8em; }
+    .courses { font-size: .8em; }
+    
+    /*ID Styles*/
+     #keb{margin-bottom: .5em;
+         margin-right: .5em; }
+    
+    /*Class Styles*/
+     .education { font-size: .8em; }
+    
+    /*Contact Page*/
+    #name { width: 90%;
+            background-color: darkgrey;
+            padding: .8em;
+            float: none;
+            margin-left: auto;
+            margin-right: auto; }
+#email { width: 90%; 
+        background-color: darkgray; 
+        padding: .8em;
+        float: none;
+        margin-left: auto; 
+        margin-right: auto;
+        margin-top: 1em; }
+#comments { width: 90%;
+            margin-left: auto;
+            margin-right: auto;
+            height: 200px;
+            padding: .8em;
+            clear: left;
+            background-color: darkgray;
+            margin-top: 1em;
+            margin-bottom: 0; }
+#submit { width: 20%;
+            background-color: darkgray; 
+            margin-bottom: 1em;
+            margin-left: auto;
+            margin-right: auto;
+            float: none;
+            margin-top: 1em;
+            }
+     #name h3, #email h3, #comments h3, #submit h3 { font-size: 1em;
+                                                color: black; 
+                                                 }
+ 
+}
