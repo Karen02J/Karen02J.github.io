@@ -5,15 +5,16 @@ Date Created: April 1, 2020
 Date Validated: April 30, 2020
 *************************************************************************************************************************************/
 /*Text Styles*/
-
+@font-face { font-family: "ultra, serif"; 
+            src: url("fonts/ultra.ttf"); }
 
 h1     { color: white;
         background-color: #7D3C98;
         border: 10px groove hotpink;
         font-size: 4em;
-        font-family: "Century Gothic", helvetica, sans-serif;
+        font-family: "ultra, serif;
         font-weight: bold;
-        text-transform: uppercase;
+       
         text-align: center; }
 h2      { color: #7D3c98; 
         font-size: 3em;
