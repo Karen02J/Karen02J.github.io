@@ -2,7 +2,7 @@
 Title: Karen Ballengee
 Author: Karen Ballengee
 Date Created: April 1, 2020
-Date Validated: April 26, 2020
+Date Validated: April 30, 2020
 *************************************************************************************************************************************/
 /*Text Styles*/
 
@@ -45,7 +45,14 @@ footer { font-size: .8em;
         clear: both;
         border-top: 3px dotted purple; 
         width: 100%;
-        padding-top: 1em;}
+    height: 74px;
+        padding-top: 0px;
+        font-family: "Century-Gothic", arial, sans-serif; 
+background-image: url(images/clarinet.png);
+  
+background-size: cover;
+}
+
 footer a:link { color: orangered; 
                 font-size: .8em;
                 text-decoration: none; }
@@ -53,6 +60,18 @@ footer a:hover {color: aqua; }
 footer a:focus {color: deeppink; }
 footer a:visited {color: lime; }
 footer a:active {color: gold; }
+footer ul { list-style-type: none;
+padding-left: 1em;
+padding-top: 15px;
+
+vertical-align: middle; }
+footer ul li { float: left;
+margin-right: 10em; }
+
+.icons, footer img { display: inline-block; 
+vertical-align: middle;
+ }
+footer img { padding-right: 3px;}
 
 /*Aside Styles*/
 aside { float: right; 
