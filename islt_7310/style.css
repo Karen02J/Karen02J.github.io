@@ -5,15 +5,15 @@ Date Created: April 1, 2020
 Date Validated: May 1, 2020
 *************************************************************************************************************************************/
 /*Text Styles*/
-@font-face { font-family: "ultra,serif"; 
-            src: url("fonts/ultra.ttf"); }
+@font-face { font-family: "ultra"; 
+            src: url("fonts/Ultra.ttf"); }
 
 h1     { color: white;
         background-color: #7D3C98;
         border: 10px groove hotpink;
         font-size: 4em;
-        font-family: "ultra,serif";
-        font-weight: bold;
+        font-family: "ultra",serif;
+        font-weight: normal;
        
         text-align: center; }
 h2      { color: #7D3c98; 
