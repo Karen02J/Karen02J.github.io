@@ -6,7 +6,7 @@ Date Validated: May 3, 2020
 *************************************************************************************************************************************/
 /*Text Styles*/
 @font-face { font-family: "20db"; 
-            src: url("fonts/20db.Otf"); }
+            src: url("fonts/20db.otf"); }
 header { width: 100%;
         border-bottom: 10px solid hotpink;
         background-image: url(images/clarinet.png);
