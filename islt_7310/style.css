@@ -5,8 +5,8 @@ Date Created: April 1, 2020
 Date Validated: May 3, 2020
 *************************************************************************************************************************************/
 /*Text Styles*/
-@font-face { font-family: "20db"; 
-            src: url("fonts/20db.otf"); }
+@font-face { font-family: "Ultra"; 
+            src: url("fonts/Ultra.ttf"); }
 header { width: 100%;
         border-bottom: 10px solid hotpink;
         background-image: url(images/clarinet.png);
@@ -14,7 +14,7 @@ header { width: 100%;
         padding-top: 2em; }
 h1     { color: #4c265e;
         font-size: 3em;
-        font-family: "20db",sans-serif;
+        font-family: "Ultra",sans-serif;
         font-weight: normal;
         text-align: center; 
         margin-bottom: 2em; 
