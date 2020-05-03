@@ -2,7 +2,7 @@
 Title: Karen Ballengee
 Author: Karen Ballengee
 Date Created: April 13, 2020
-Date Validated: April 30, 2020
+Date Validated: May 3, 2020
 *************************************************************************************************************************************/
 
 /*Navigation Styles*/
@@ -13,7 +13,8 @@ nav ul{ font-family: "Century Gothic", helvetica, sans-serif;
     font-size: 1em;
     font-weight: bold;
     background-color: #4c265e; 
-    color: #ffffff; 
+    color: white;
+        border-right: 1px solid #7d3c98; 
     list-style-type: none;
     text-align: center;
     position: relative; 
