@@ -2,7 +2,7 @@
 Title: Karen Ballengee
 Author: Karen Ballengee
 Date Created: April 1, 2020
-Date Validated: May 3, 2020
+Date Validated: May 5, 2020
 *************************************************************************************************************************************/
 /*Text Styles*/
 @font-face { font-family: "20db"; 
@@ -199,7 +199,26 @@ margin-bottom: 1em; }
                                                 color: black; }
 #hideMe{ display:none; }
 
-
+/*Table Styles*/
+table { width: 95%; 
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px solid magenta; 
+    font-family: "Century Gothic", helvetica, sans-serif;
+    font-size: 1em;}
+tbody tr:nth-child(even) { background-color:lightpink; }
+tbody tr:nth-child(odd) { background-color:white; }
+td {vertical-align: top; 
+    border: 1px dotted magenta;
+    padding: .5em;}
+th {background-color: #4c265e;
+    color: #ffffff; 
+    padding: .5em;}
+figcaption { color: #4b0082; 
+        font-size: 2em;
+        font-family: "Century Gothic", helvetica, sans-serif; 
+        font-weight:  bold;
+        text-align: center; }
 /*Media Queries*/
 @media screen and (max-width: 640px){ 
   
@@ -326,7 +345,18 @@ main { width: 90%; /*condensed to a single main*/
     #collage{ width: 95%;
         margin-left: auto;
             margin-right: auto; }
-    }
+    
+    
+/*Tables*/
+    th, td { display: block }
+    th { display: none; }
+    thead, tbody tr:nth-child(even) { background-color: white; }
+   figcaption { color: #4b0082; 
+        font-size: 1em;
+        font-family: "Century Gothic", helvetica, sans-serif; 
+        font-weight:  bold;
+       text-align: center; }
+}
 /*Print Styles*/
 @media print {
 * { 
