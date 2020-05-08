@@ -2,7 +2,7 @@
 Title: Karen Ballengee
 Author: Karen Ballengee
 Date Created: April 1, 2020
-Date Validated: May 5, 2020
+Date Validated: May 8, 2020
 *************************************************************************************************************************************/
 /*Text Styles*/
 @font-face { font-family: "20db"; 
@@ -167,36 +167,46 @@ margin-bottom: 1em; }
 .philosophy2::first-line {text-indent: 5%; }
 
 /*Contact Styles*/
-#name   { width: 20%;
-        background-color: darkgrey;
-        padding: 1em;
+form { background-color: white; 
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto; 
+        font-family: "Century Gothic", helvetica, sans-serif;
+        font-size: 1em;    }
+button { background-color: #4c265e;
+        color: white;
+        font-weight: bold;
+        font-size: 1.2em;
+        width: 110px;
+        height: 30px;
+        margin-bottom: 1em;
+    margin-left: 595px; }
+.first  { width: 20%;
         float: left; 
-        margin-left: 10em;
-        margin-right: 10em; 
-        margin-bottom: 3em;}
-#email { width: 20%; 
-        background-color: darkgray; 
-        padding: 1em;
-        float: left; 
-        margin-bottom: 3em;}
-#comments { width: 55%;
-            height: 300px;
-            padding: 1em;
-            clear: left;
-            background-color: darkgray;
-            margin-top: 7em;
-            margin-bottom: 3em;
-            margin-left: 10em; }
-#submit { width: 20%;
-        background-color: darkgray; 
-        float: right;
-        margin-bottom: 3em;
-        margin-right: 23em;
-        font-family: "Century Gothic", arial, sans-serif; 
-        font-size: 1em;
-        text-align: center; }
-#name h3, #email h3, #comments h3, #submit h3 { font-size: 1em;
-                                                color: black; }
+        margin-left: 17em;
+        margin-right: 5em;
+        margin-bottom: 2em;
+        margin-top: 2em; }
+.last { width: 20%; 
+        float: left;
+        margin-bottom: 2em;
+        margin-top: 2em; }
+.email {  clear: left;
+            width: 20em;
+           margin-left: 9.3em;
+            margin-right: auto;
+            margin-bottom: 1em; }
+.comments { width: 50%;
+            margin-left: 17em;
+            margin-bottom: 2em; }
+.submit { margin-bottom: 2em;
+          width: 100%;}
+label { line-height: 150%; 
+        clear: left; }
+#emaillabel { margin-left: 7.8em;}
+textarea { height: 10em;
+            width: 85%; 
+            margin-left: 0; }
 #hideMe{ display:none; }
 
 /*Table Styles*/
@@ -304,37 +314,38 @@ main { width: 90%; /*condensed to a single main*/
      .education { font-size: .8em; }
     
     /*Contact Page*/
-#name { width: 90%;
-            background-color: darkgrey;
+.first { width: 90%;
             padding: .8em;
             float: none;
             margin-left: auto;
             margin-right: auto; }
-#email { width: 90%; 
-        background-color: darkgray; 
+.last { width: 90%; 
         padding: .8em;
         float: none;
         margin-left: auto; 
         margin-right: auto;
-        margin-top: 1em; }
-#comments { width: 90%;
+        margin-top: .5em; }
+.email { width: 90%;  
+        padding: .8em;
+        float: none;
+        margin-left: 0; 
+        margin-right: auto;
+        margin-top: .5em; }
+   .comments { width: 90%;
             margin-left: auto;
             margin-right: auto;
             height: 200px;
             padding: .8em;
             clear: left;
-            background-color: darkgray;
-            margin-top: 1em;
+            margin-top: .5em;
             margin-bottom: 0; }
-#submit { width: 20%;
-            background-color: darkgray; 
+#submit { width: 100%;
             margin-bottom: 1em;
             margin-left: auto;
-            margin-right: auto;
-            float: none;
-            margin-top: 1em; }
-#name h3, #email h3, #comments h3, #submit h3 { font-size: 1em;
-                                                color: black; }
+            margin-right: auto; }
+button {margin-left: 5.5em; }
+#emaillabel { margin-left: 0;}
+   textarea {width: 100%; }
  /*Section Styles*/
     #section1 { width: 90%;  }
     #goal1,#goal2, #goal3 { font-size: 1.1em; }

@@ -7,8 +7,8 @@ Title: Karen Ballengee Contact
 Use: How to Contact Me
 Author: Karen Ballengee
 School/Term: University of Missouri. Spring 2020
-Tested: May 3, 2020 in Chrome, Firefox, and Edge
-Tested: May 3, 2020 on Firefox Mobile
+Tested: May 8, 2020 in Chrome, Firefox, and Edge
+Tested: May 8, 2020 on Firefox Mobile
 ***********************************************************************************************************************************
 -->         
         <meta charset="utf-8">
@@ -49,10 +49,14 @@ Tested: May 3, 2020 on Firefox Mobile
         </nav>
     <main>
         <h2>Contact Me</h2>
-        <section id="name"><h3>First and Last name.</h3></section>
-        <section id="email"><h3>Email address</h3></section>
-        <section id="comments"><h3>Comments</h3></section>
-        <section id="submit"><h3>Submit</h3></section>
+        <form action="mailto:karenballengee@yahoo.com?Subject=Clarinet%20Website" method="post" enctype="text/plain">
+        <div class="first">
+            <label>First Name</label><br><input type="text" name="first" placeholder="First Name" required autofocus></div>
+            <div class="last"><label>Last Name</label><br><input type="text" name="last" placeholder="Last Name" required></div>
+            <div class="email"><label id="emaillabel">Email Address</label><br><input name="email" type="Email" class="email" placeholder="email" required></div>
+            <div class="comments"><label id="commentlabel">Comments</label><br><textarea name="comments" placeholder="Type your comments here." required></textarea></div>
+            <div class="submit"><button type="submit">Submit</button></div>
+        </form>
     </main>
    <footer>
        
