@@ -40,7 +40,7 @@ p       { font-family: "Century Gothic", helvetica, sans-serif;
 main  a:link { color: #0000ff; 
                 text-decoration: none;  }
 main a:hover {color: #ff00bf; }
-main a:visited {color: lime; }
+main a:visited {color: forestgreen; }
 main a:active {color: #66ffff; }
 
 /*Footer Styles*/
