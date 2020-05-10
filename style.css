@@ -2,24 +2,27 @@
 Title: Karen Ballengee
 Author: Karen Ballengee
 Date Created: April 1, 2020
-Date Validated: April 30, 2020
+Date Validated: May 10, 2020
 *************************************************************************************************************************************/
 /*Text Styles*/
-@font-face { font-family: "ultra, arial, sans-serif"; 
-            src: url("docs/ultra.ttf"); }
-
-h1     { color: white;
-        background-color: #7D3C98;
-        border: 10px groove hotpink;
-        font-size: 4em;
-        font-family: "20db, arial, sans-serif;
-        font-weight: bold;
-        text-transform: uppercase;
-        text-align: center; }
-h2      { color: #7D3c98; 
+@font-face { font-family: "20db"; 
+            src: url("fonts/20db.otf"); }
+header { width: 100%;
+        border-bottom: 10px solid hotpink;
+        background-image: url(images/clarinet.png);
+        background-size: cover; 
+        padding-top: 2em; }
+h1     { color: #4c265e;
         font-size: 3em;
-        font-family: "Century Gothic", helvetica, sans-serif; 
-        font-weight:  bold; }
+        font-family: "20db",sans-serif;
+        font-weight: normal;
+        text-align: center; 
+        margin-bottom: 2em; 
+        text-align: center; }
+h2 { color: #4c265e;
+    font-size: 2.5em;
+    font-family: "Century Gothic", helvetica, sans-serif;
+    font-weight: bold; }
 h3     { color: #7D3c98; 
         font-size: 2em;
         font-family: "Century Gothic", helvetica, sans-serif; 
@@ -37,8 +40,7 @@ p       { font-family: "Century Gothic", helvetica, sans-serif;
 main  a:link { color: #0000ff; 
                 text-decoration: none;  }
 main a:hover {color: #ff00bf; }
-main a:focus {color: #66ff33; }
-main a:visited {color: #334d4d; }
+main a:visited {color: forestgreen; }
 main a:active {color: #66ffff; }
 
 /*Footer Styles*/
@@ -46,64 +48,83 @@ footer { font-size: .8em;
         clear: both;
         border-top: 3px dotted purple; 
         width: 100%;
-    height: 74px;
+        height: 74px;
         padding-top: 0px;
-        font-family: "Century-Gothic", arial, sans-serif; 
-background-image: url(images/clarinet.png);
-  
-background-size: cover;
-}
-
-footer a:link { color: orangered; 
-                font-size: .8em;
+        font-family: "Century-Gothic", arial, sans-serif;
+         background-image: url(images/clarinet.png);
+        background-size: cover;
+        border-top: 10px solid hotpink;
+        border-bottom: 10px solid #4c265e; }
+footer a:link { color: darkblue; 
+                font-size: 1em;
                 text-decoration: none; }
 footer a:hover {color: aqua; }
-footer a:focus {color: deeppink; }
-footer a:visited {color: lime; }
-footer a:active {color: gold; }
+footer a:visited {color: deeppink; }
 footer ul { list-style-type: none;
 padding-left: 1em;
 padding-top: 15px;
-
 vertical-align: middle; }
 footer ul li { float: left;
 margin-right: 10em; }
-
 .icons, footer img { display: inline-block; 
-vertical-align: middle;
- }
-footer img { padding-right: 3px;}
+vertical-align: middle; }
+footer img { padding-right: 3px;
+            transition: 1s;}
+footer img:hover { transform: scale(2);}
 
 /*Aside Styles*/
 aside { float: right; 
         font-family: "Century Gothic", helvetica, sans-serif;
         font-size: 1em;
-        background-color: plum; 
+        background-color: #ffffff; 
         padding: .5em; 
         margin-left: 1em; 
-        margin-bottom: 20em;
+       margin-bottom: 3em;
         margin-top: 1em;
         border: 3px dotted purple; }
         aside li { list-style-type: square; }
 
 /*Blockquote Styles*/
 blockquote { font-family: "Century Gothic", helvetica, sans-serif;
-            font-size: .8em;
+            font-size: 1em;
             line-height: 100%; 
             width: 600px;
             background-color: #ffffff; 
             padding: 1em;
-            border: 3px dotted purple; 
-}
+            border: 3px dotted purple; }
 /*Body Styles*/
 body { background-color: #f5edf8;
         margin: 15px;   }
+/*Section Styles */
+#section1, #section2, #section3 { width: 90%; 
+            background-color: whitesmoke;
+            padding: 10px;
+            margin-left: auto;
+            margin-right: auto; 
+            margin-bottom: 20px; }
 
+#section1 > h4, #section2 >h4, #section3 > h4 { line-height: 110%; }
+#section1 > p, #section2 > p, #section3 >p { padding-left: 2em;
+                                            padding-right: 2em; }
+#section1 > ul, #section2 > ul, #section3 > ul { padding-left: 4em;
+                                                font-family: "Century Gothic", helvetica, sans-serif;
+                                                font-size: 1em; }
+
+#goal1,#goal2, #goal3 { color: white;
+                        width: 95%;
+                        margin-left: auto;
+                        margin-right: auto; 
+                        background-color:#4c265e; 
+                        padding-left: 1em;
+                        padding-top: .5em;
+                        padding-bottom: .5em; 
+                        margin-bottom: 0; 
+                        box-shadow: 5px 5px 2px grey;}
 
 /*Class Styles*/
 .accomplishments { font-family: "Century Gothic", helvetica, sans-serif;
-                        font-size: 1em;
-                        list-style-type: none; }
+                     font-size: 1em;
+                     list-style-type: none; }
 .clearL { clear: left; }
 .courses { font-family: "Century Gothic", helvetica, sans-serif;
             font-size: 1em; }
@@ -116,6 +137,10 @@ margin-bottom: 1em; }
 .past { color: forestgreen; }
 
 /*ID Styles*/
+#collage { width: 90%;
+         margin-left: 3em;
+        border: 5px solid #4c265e;
+        box-shadow: 5px 5px 3px lightgrey; }
 #keb { float: left; 
         margin-right: 1em; 
         padding-left: 1em; 
@@ -127,7 +152,9 @@ margin-bottom: 1em; }
             margin-right: auto; 
             background-color: whitesmoke;
             padding: 20px; 
-            margin-bottom: 30px; }
+            margin-bottom: 30px; 
+    box-shadow: 10px 10px 5px grey; 
+            }
 #philosophy > h3 { text-align: center; }
 .philosophy1::first-letter{ font-family: "Times new roman", serif;
                             font-size: 5em;
@@ -137,52 +164,79 @@ margin-bottom: 1em; }
 .philosophy2::first-line {text-indent: 5%; }
 
 /*Contact Styles*/
-#name   { width: 20%;
-        background-color: darkgrey;
-        padding: 1em;
+form { background-color: white; 
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto; 
+        font-family: "Century Gothic", helvetica, sans-serif;
+        font-size: 1em;    }
+button { background-color: #4c265e;
+        color: white;
+        font-weight: bold;
+        font-size: 1.2em;
+        width: 110px;
+        height: 30px;
+        margin-bottom: 1em;
+    margin-left: 595px; }
+.first  { width: 20%;
         float: left; 
-        margin-left: 10em;
-        margin-right: 10em; 
-        margin-bottom: 3em;}
-#email { width: 20%; 
-        background-color: darkgray; 
-        padding: 1em;
-        float: left; 
-        margin-bottom: 3em;}
-#comments { width: 55%;
-            height: 300px;
-            padding: 1em;
-            clear: left;
-            background-color: darkgray;
-            margin-top: 7em;
-            margin-bottom: 3em;
-            margin-left: 10em; }
-#submit { width: 20%;
-        background-color: darkgray; 
-        float: right;
-        margin-bottom: 3em;
-        margin-right: 23em;
-        font-family: "Century Gothic", arial, sans-serif; 
-        font-size: 1em;
-        text-align: center; }
-#name h3, #email h3, #comments h3, #submit h3 { font-size: 1em;
-                                                color: black; 
-                                                 }
-
+        margin-left: 17em;
+        margin-right: 5em;
+        margin-bottom: 2em;
+        margin-top: 2em; }
+.last { width: 20%; 
+        float: left;
+        margin-bottom: 2em;
+        margin-top: 2em; }
+.email {  clear: left;
+            width: 20em;
+           margin-left: 9.3em;
+            margin-right: auto;
+            margin-bottom: 1em; }
+.comments { width: 50%;
+            margin-left: 17em;
+            margin-bottom: 2em; }
+.submit { margin-bottom: 2em;
+          width: 100%;}
+label { line-height: 150%; 
+        clear: left; }
+#emaillabel { margin-left: 7.8em;}
+textarea { height: 10em;
+            width: 85%; 
+            margin-left: 0; }
 #hideMe{ display:none; }
 
+/*Table Styles*/
+table { width: 95%; 
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px solid magenta; 
+    font-family: "Century Gothic", helvetica, sans-serif;
+    font-size: 1em;
+    background-color: white; }
+td {vertical-align: top; 
+    border: 1px dotted magenta;
+    padding: .5em;}
+th {background-color: #4c265e;
+    color: #ffffff; 
+    padding: .5em;}
+figcaption { color: #4b0082; 
+        font-size: 2em;
+        font-family: "Century Gothic", helvetica, sans-serif; 
+        font-weight:  bold;
+        text-align: center; }
 /*Media Queries*/
 @media screen and (max-width: 640px){ 
   
     /*Layout Styles*/
     body { width: 90%;
            margin-left: auto;
-            margin-right: auto; }
+            margin-right: auto;}
     header { width: 94%;
             margin-left: auto;
             margin-right: auto;
             display: block;
-            top: 0; }
+            top: 0;  }
     aside { clear: both;    
             float: left;
             padding-left: 2em; /*padding to move the text*/
@@ -193,14 +247,28 @@ margin-bottom: 1em; }
             margin-right: auto;
             width: 86%;
             font-size: 1em; }
-    footer {width: 100%;
+    footer {width: 96%;
             padding-left: .5em;
-            padding-right: .5em; }
-   blockquote { width: 90%;
+            padding-right: .5em;
+            border-top: 5px solid hotpink;
+            border-bottom: 5px solid #4c265e;}
+ iframe { width: 100%; }
+    
+footer ul { list-style-type: none;
+padding-left: 1em; 
+padding-top: 0;
+vertical-align: middle; }
+footer ul li { float: left;
+            margin-right: 5em;
+            margin-bottom: .8em;}
+.icons, footer img { display: inline-block; 
+vertical-align: middle; }
+    footer img { padding-right: 3px; }   
+ blockquote { width: 90%;
                 margin-left: .5em;
                 margin-right: auto; 
                 font-size: .8em; }
-    main { width: 90%; /*condensed to a single main*/
+main { width: 90%; /*condensed to a single main*/
             float: left;
             padding-left: .5em;
             padding-right: .5em;
@@ -208,13 +276,18 @@ margin-bottom: 1em; }
             margin-left: 1em;  } 
     
     /*Text Styles*/
-    h1 { font-size: 1em; }
-    h2 { font-size: 1.25em; }
-    h3 {font-size: 1em; }
-    h4 { font-size: .8em;  }
-    p {font-size: .8em; }
-   
-    aside h4 { margin-top: .2em; 
+    h1 { font-size: 1.5em;
+        padding-top: .5em; 
+        color: #7D3c98; }
+    h2 { font-size: 1.3em;
+        color: #7D3c98; 
+        font-family: "Century Gothic", helvetica, sans-serif; }
+    h3 {font-size: 1.1em;
+        font-family: "Century Gothic", helvetica, sans-serif; }
+    h4 {font-size: 1em;
+        font-family: "Century Gothic", helvetica, sans-serif;  font-size: .8em; }
+    p {font-size: 1em; }
+   aside h4 { margin-top: .2em; 
             margin-bottom: .2em; }
     
     /*Philosophy Styles*/
@@ -237,38 +310,126 @@ margin-bottom: 1em; }
      .education { font-size: .8em; }
     
     /*Contact Page*/
-    #name { width: 90%;
-            background-color: darkgrey;
+.first { width: 90%;
             padding: .8em;
             float: none;
             margin-left: auto;
             margin-right: auto; }
-#email { width: 90%; 
-        background-color: darkgray; 
+.last { width: 90%; 
         padding: .8em;
         float: none;
         margin-left: auto; 
         margin-right: auto;
-        margin-top: 1em; }
-#comments { width: 90%;
+        margin-top: .5em; }
+.email { width: 90%;  
+        padding: .8em;
+        float: none;
+        margin-left: 0; 
+        margin-right: auto;
+        margin-top: .5em; }
+   .comments { width: 90%;
             margin-left: auto;
             margin-right: auto;
             height: 200px;
             padding: .8em;
             clear: left;
-            background-color: darkgray;
-            margin-top: 1em;
+            margin-top: .5em;
             margin-bottom: 0; }
-#submit { width: 20%;
-            background-color: darkgray; 
+#submit { width: 100%;
             margin-bottom: 1em;
             margin-left: auto;
-            margin-right: auto;
-            float: none;
-            margin-top: 1em;
-            }
-     #name h3, #email h3, #comments h3, #submit h3 { font-size: 1em;
-                                                color: black; 
-                                                 }
- 
+            margin-right: auto; }
+button {margin-left: 5.5em; }
+#emaillabel { margin-left: 0;}
+   textarea {width: 100%; }
+ /*Section Styles*/
+    #section1 { width: 90%;  }
+    #goal1,#goal2, #goal3 { font-size: 1.1em; }
+    #section1 > h4, #section2 > h4, #section3 > h4 { font-size: 1em;
+                                                    margin-left: auto;
+                                                    margin-right: auto; }
+   #section1 > p, #section2 > p, #section3 > p { font-size: 1em;}
+    #collage{ width: 95%;
+        margin-left: auto;
+            margin-right: auto; }
+    
+    
+/*Tables*/
+    th, td { display: block }
+    th { display: none; }
+    thead, tbody tr:nth-child(even) { background-color: white; }
+   figcaption { color: #4b0082; 
+        font-size: 1em;
+        font-family: "Century Gothic", helvetica, sans-serif; 
+        font-weight:  bold;
+       text-align: center; }
+}
+/*Print Styles*/
+@media print {
+* { 
+    background: transparent;
+    color: #000000;
+    box-shadow: none;
+    text-shadow: none; }
+nav { display: none; }
+h1     { color: black;
+        background: none;
+        border: 3px solid black;
+        font-size: 20pt;
+        font-family: "ultra,serif";
+        font-weight: bold;
+        text-align: center; }
+h2      { color: black; 
+        font-size: 18pt;
+        font-family: "Century Gothic", helvetica, sans-serif; 
+        font-weight:  bold; }
+h3     { color: black; 
+        font-size: 16pt;
+        font-family: "Century Gothic", helvetica, sans-serif; 
+        font-weight:  bold; }
+h4     { color: black; 
+        font-size: 14pt;
+        font-family: "Century Gothic", helvetica, sans-serif; 
+        font-weight:  bold; }
+p       { font-family: "Century Gothic", helvetica, sans-serif;
+        font-size: 14pt;
+        line-height: 120%; }
+footer { font-size: 12pt;
+        border-top: 1px solid black; 
+        width: 100%;
+        height: 50px;
+        padding-top: 0px;
+        font-family: "Century-Gothic", arial, sans-serif; 
+        background-image: none; }
+footer a:link { color: black;
+                font-size: 12pt; }
+footer img { display: none; }
+footer ul { list-style-type: none; 
+            padding-left: 3px;
+            padding-top: 0;}
+    footer ul li { float: left;
+                margin-right: 50px; }
+blockquote { font-family: "Century Gothic", helvetica, sans-serif;
+            font-size: .8em;
+            line-height: 100%; 
+            background-color: #ffffff; 
+            border-left: 3px dotted black;
+            padding: 10px;
+            border-right: none;
+            border-top: none;
+            border-bottom: none;}
+aside { float: right; 
+        font-size: 12pt;
+        padding: .5em; 
+        margin-top: 200px;
+        margin-bottom: 0px;
+        border: 1px solid black; }
+        aside li { list-style-type: square; }
+main { width: 90%; }
+.current { color: black; }
+.education {font-size: 12pt;
+            line-height: 100%; }
+.education li{list-style-type: none;
+margin-bottom: 12pt; }
+.past { color: black; }
 }
