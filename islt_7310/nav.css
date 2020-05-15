@@ -2,7 +2,7 @@
 Title: Karen Ballengee
 Author: Karen Ballengee
 Date Created: April 13, 2020
-Date Validated: May 10, 2020
+Date Validated: May 15, 2020
 *************************************************************************************************************************************/
 
 /*Navigation Styles*/
@@ -13,12 +13,13 @@ nav ul{ font-family: "Century Gothic", helvetica, sans-serif;
     font-size: 1em;
     font-weight: bold;
     background-color: #4c265e; 
-    color: white;
-        border-right: 1px solid #7d3c98; 
+    color: white; 
     list-style-type: none;
     text-align: center;
     position: relative; 
-    margin: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    width: 100%;
     padding: 0; }
 nav ul li { position: relative;
         float: left;}
@@ -26,15 +27,10 @@ nav a{ text-decoration: none;
     display: inline-block; 
     padding-top: 20px;
     padding-bottom: 20px;
-    width: 180px; }
+    width: 150px; }
 nav ul > li { display: inline-block; 
             position: relative;
-            padding-top: 10px;
-            padding-bottom: 10px;
-            width: 180px;
-            border-right: 3px solid #9f58bb;
             background-color: #4c265e; }
-nav  ul > .lastitem{ border-right: none;  }
 nav ul>li ul { position: absolute;
                 top: 100%;
                 display: none; }
@@ -42,19 +38,22 @@ nav ul ul ul li { float: none;}
 nav>ul>li:hover { display: block; }
 nav ul >li > a { text-decoration: none;
                 color: #ffffff; } 
-nav  ul > li > a:hover{ color: hotpink; }
+nav  ul > li > a:hover{ background-color: #D3D3D3;
+                        color: #4c265e; }
 nav ul ul{  top: 100%;
             font-family: "Century Gothic", helvetica, sans-serif;
             font-size: 1em;
             font-weight: bold;
-            background-color: #4c265e; 
+             
             color: #ffffff; 
             list-style-type: none;
             display: none;
             position: absolute;
             margin-left: 0;
             padding-left: 0; }
-nav ul ul li { float: none; 
+nav ul ul li { background-color: #404040;
+    
+    float: none; 
             display: block; }
 nav ul li:hover >ul { display: block; }
 nav ul:after { content: "";
@@ -63,18 +62,21 @@ nav ul:after { content: "";
 nav > ul  ul> li{ border-right: none;}
 
 /*Media Query*/
-@media only screen and (max-width: 640px) {
 
-	#hamburger {
+ /*Media Query*/
+@media only screen and (max-width: 640px) {
+   #hamburger {
 		display: inline-block;
-        padding-left: 20px;
+        padding-left: 50px;
         width: 26px;
         font-size:3.2em;
         float: left;
-        margin-top: 30px;
+        margin-top: 10px;
         margin-left: auto;
         margin-right: auto;
-        cursor: pointer; }
+       margin-bottom: 10px;
+        cursor: pointer; 
+        color: #ffffff;}
     nav ul>.lastitem{ border-bottom: none;  }
     nav:hover #mobileHide {
 		display: none;   }
@@ -83,8 +85,7 @@ nav > ul  ul> li{ border-right: none;}
         display:none; 
         position: absolute; 
         padding: 0; 
-        top: 120px; /*this is where you can adjust how far up the mobile menu appears */
-        margin-right: 20px; }
+        top: 280px;} /*this is where you can adjust how far up the mobile menu appears */
     nav ul li { text-align: center;
 		      font-weight: bold;
             color: darkmagenta;
@@ -98,8 +99,11 @@ nav > ul  ul> li{ border-right: none;}
             display: block;
             border: none;
             width: 100%;
-            padding: 0; }
+            padding: 0;
+            }
     nav ul {display: none;}
     nav:hover ul{ display:block; }
     nav ul ul li {  display: none; }
+    nav  ul > li > a:hover{ background-color: #4c265e;
+                        color: #d9d9d9; }
 }
